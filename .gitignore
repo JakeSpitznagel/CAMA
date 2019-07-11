@@ -1,0 +1,7 @@
+*.png
+*.PNG
+
+.vscode
+.env
+
+__pycache__
