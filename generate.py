@@ -105,7 +105,7 @@ class ImgGenerator:
 
 if __name__ == "__main__":
     colors = [(200, 0, 0), (0, 200, 0), (0, 0, 200), (200, 200, 0), (200, 0, 200), (0, 200, 200)]
-    kwargs = {'token_type': 'classify', 'colors': colors, 'color_dict': {None: (200, 200, 200)}, 'color_assignment': 'random', 'solid_bars': True, 'line_length': 80}
+    kwargs = {'token_type': 'classify', 'colors': colors, 'color_dict': {None: (200, 200, 200)}, 'color_assignment': 'random', 'solid_bars': False, 'line_length': 80}
     img_gen = ImgGenerator(**kwargs)
-    with open('test.py', 'r') as f:
-        img_gen.generate_from_file(f, 'test2.png')
+    with open('generate.py', 'r') as f:
+        img_gen.generate_from_file(f, 'test.png')
